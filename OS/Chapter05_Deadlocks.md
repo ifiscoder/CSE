@@ -615,23 +615,20 @@ Banker's = Avoidance (ensures safe state before granting)
 
 ### NAT 3: Resource Ordering
 
-**Q:** 5 resources (R1, R2, R3, R4, R5). If ordering R1 < R3 < R2 < R5 < R4 is used, how many possible cycles are prevented?
+**Q:** 5 resources (R1, R2, R3, R4, R5). Using total ordering R1 < R3 < R2 < R5 < R4, can deadlock occur? (1=yes, 0=no)
 
 **Solution:**
 
-**Total possible cycles** (worst case): $\binom{5}{2} = 10$ pairs could form cycles.
+With **total ordering**, processes must request resources in ascending order only.
 
-With total ordering, **zero cycles** can form.
+This **eliminates circular wait** completely because:
+- If process P1 holds Ri and requests Rj, then i < j (ordering enforced)
+- No process can hold a higher-numbered resource while waiting for a lower one
+- Therefore, **no cycle can form** in the resource allocation graph
 
-Cycles prevented = 10.
+**Circular wait impossible → Deadlock impossible**
 
-Actually, this depends on interpretation. In a complete graph with 5 nodes, the number of possible cycles is complex.
-
-**Simpler interpretation:** With total ordering, **all** cycles are prevented.
-
-**Answer:** All cycles (but NAT requires a number—this question needs clarification).
-
-**Better NAT:** "Can cycles form with resource ordering?" **Answer: 0 (No)**
+**Answer: 0** (No deadlock can occur)
 
 ---
 

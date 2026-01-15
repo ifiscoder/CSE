@@ -535,62 +535,29 @@ Only **FIFO** suffers from Belady's Anomaly.
 
 **Solution:**
 
-```
-1: [1] F
-2: [1,2] F
-3: [1,2,3] F
-4: [1,2,3,4] F
-1: [1,2,3,4] - (hit)
-2: [1,2,3,4] - (hit)
-5: [1,2,5,4] F (replace 3, next use at index 9 vs 4 at 10)
-1: [1,2,5,4] - (hit)
-2: [1,2,5,4] - (hit)
-3: [1,2,5,3] F (replace 4, next use at index 10 vs 3 at index 9)
-4: [1,2,4,3] F (replace 5, never used again)
-5: [1,2,4,5] F (replace 3, never used again)
-```
-
-**Wait, let me recalculate more carefully:**
-
+Reference string with indices:
 ```
 Index: 0  1  2  3  4  5  6  7  8  9  10 11
 Page:  1  2  3  4  1  2  5  1  2  3  4  5
-
-1: [1] F
-2: [1,2] F
-3: [1,2,3] F
-4: [1,2,3,4] F
-1: hit
-2: hit
-5: [5,2,3,4] F (replace 1, next use of 1 at 7, others at 5,8,9,10 - wait, need to check future)
-
-Let me use next-use positions:
-At index 6 (inserting 5):
-- 1: next at 7
-- 2: next at 8
-- 3: next at 9
-- 4: next at 10
-Replace 4 (farthest)
-
-5: [1,2,3,5] F
-1: hit
-2: hit
-3: hit
-4: [1,2,4,5] F (replace 3, no future use)
-5: hit
 ```
 
-**Recounting:**
+Optimal replacement trace (replace page used farthest in future):
 ```
-1: F
-2: F
-3: F
-4: F
-5: F
-4: F (at index 10)
+Index 0 (1): [1,-,-,-]      → FAULT (compulsory)
+Index 1 (2): [1,2,-,-]      → FAULT (compulsory)
+Index 2 (3): [1,2,3,-]      → FAULT (compulsory)
+Index 3 (4): [1,2,3,4]      → FAULT (compulsory)
+Index 4 (1): [1,2,3,4]      → HIT
+Index 5 (2): [1,2,3,4]      → HIT
+Index 6 (5): [1,2,3,5]      → FAULT (replace 4, next use at index 10 - farthest)
+Index 7 (1): [1,2,3,5]      → HIT
+Index 8 (2): [1,2,3,5]      → HIT
+Index 9 (3): [1,2,3,5]      → HIT
+Index 10 (4): [1,2,4,5]     → FAULT (replace 3, no future use)
+Index 11 (5): [1,2,4,5]     → HIT
 ```
 
-**Total: 6 faults**
+**Total: 6 page faults**
 
 **Answer: 6**
 
