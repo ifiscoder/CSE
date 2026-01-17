@@ -1,6 +1,6 @@
-# GATE CSE Study Material
+# CSE Study Material | GATE • ESE • PSU • BANK
 
-Welcome to the comprehensive GATE CSE study material repository. This repository contains A-Z study materials for GATE, ESE, PSU, and Bank exams.
+Welcome to the comprehensive CSE study material repository. This repository contains A-Z study materials for **GATE, ESE, PSU, and Bank** exams.
 
 ## 📚 Available Subjects
 
