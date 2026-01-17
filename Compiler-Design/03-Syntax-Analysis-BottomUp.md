@@ -407,7 +407,7 @@ For expression grammar:
 ### Trap 1: The FOLLOW vs Lookahead
 **Question Pattern:** "SLR has conflict, CLR doesn't. Why?"
 **Anti-Solution:** Students think they're the same.
-**Truth:** SLR uses FOLLOW(A) for all A → α•. CLR uses specific lookahead which is a subset.
+**Truth:** SLR uses FOLLOW(A) for all A → α• items. CLR uses context-specific lookahead computed for each LR(1) item, which is often more precise and can avoid conflicts that appear in SLR.
 
 ### Trap 2: The Reduce Action Entry
 **Question Pattern:** "Which cells get reduce A → α in SLR table?"

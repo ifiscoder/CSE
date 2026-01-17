@@ -199,7 +199,7 @@ Where:
 ### Trap 1: The Shifting Decimal Trap
 **Question Pattern:** "What is $0.1_{10}$ in binary?"
 **Anti-Solution:** Students try finite conversion.
-**Truth:** $0.1_{10}$ is a **repeating** binary fraction: $0.0\overline{0011}_2$
+**Truth:** $0.1_{10}$ is a **repeating** binary fraction: $0.0001100110011..._2$ = $0.0\overline{0011}_2$ (where the overline indicates the repeating portion starts after the initial 0.0)
 
 ### Trap 2: The Complement Confusion
 **Question Pattern:** "Find the decimal value of `10000000` in 8-bit 2's complement."

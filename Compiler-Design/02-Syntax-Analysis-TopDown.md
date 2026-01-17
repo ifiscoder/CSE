@@ -363,7 +363,7 @@ void T() {
 ### Trap 1: The ε in FIRST Propagation
 **Question Pattern:** "Calculate FIRST(XY) where X →ε."
 **Anti-Solution:** Students only take FIRST(X).
-**Truth:** If ε ∈ FIRST(X), must also add FIRST(Y)!
+**Truth:** If ε ∈ FIRST(X), then FIRST(XY) = (FIRST(X) - {ε}) ∪ FIRST(Y). Both non-ε elements from X AND elements from Y must be included!
 
 ### Trap 2: The FOLLOW Inheritance
 **Question Pattern:** "Calculate FOLLOW(B) in A → αB."
