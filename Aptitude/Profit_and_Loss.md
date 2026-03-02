@@ -1,5 +1,5 @@
 # Profit & Loss — Complete A-to-Z Study Material
-> **Target Exams:** GATE · ESE · PSU · BANK (SSC CGL / IBPS / SBI / RBI)
+> **Target Exams:** GATE / ESE / PSU / BANK (SSC CGL / IBPS / SBI / RBI)
 >
 > **Goal:** Rank-1 mastery — every concept derived from first principles, every trap exposed, every shortcut battle-tested.
 
