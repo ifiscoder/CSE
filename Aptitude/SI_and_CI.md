@@ -88,7 +88,9 @@ From $SI = \frac{PRT}{100}$, isolate any variable:
 The formula assumes $T$ is in **years** (since $R$ is usually per annum).
 
 - If time is in **months**: $T = \frac{\text{months}}{12}$
-- If time is in **days**: $T = \frac{\text{days}}{365}$ (or 366 for leap year — bank exams sometimes specify)
+- If time is in **days**: $T = \frac{\text{days}}{365}$ (or 366 for leap year)
+
+> **Banking Convention:** Many bank/financial exams use a **360-day commercial year** instead of 365. Always check the question. If unspecified in a BANK exam, assume 360 days. If unspecified in GATE/ESE, assume 365 days.
 
 **Example:** $P = ₹5000$, $R = 12\%$ p.a., $T = 9$ months.
 
@@ -259,13 +261,23 @@ If a sum $P$ is borrowed and repaid in $n$ equal annual installments of ₹$x$ e
 
 $$\boxed{P = \frac{x \cdot n}{1 + \frac{R}{100} \cdot \frac{(n-1)}{2}}}$$
 
-**Why?** Each installment of ₹$x$ reduces the outstanding principal. The $k$-th installment (paid at end of year $k$) owes interest for $(n - k)$ more years. Summing up:
+**Why?** Each installment of ₹$x$ reduces the outstanding principal. The $k$-th installment (paid at end of year $k$) effectively "saves" interest for the remaining $(n - k)$ years.
 
-Total amount paid = $n \cdot x$
+Total amount repaid = $n \times x$
 
-Total interest charged = $\frac{P \cdot R \cdot n}{100} - \frac{x \cdot R}{100}\left[1 + 2 + \cdots + (n-1)\right]$
+The principal with interest for $n$ years = $P + \frac{PRn}{100}$
 
-Setting total amount paid equal to principal + total interest and solving for $x$ gives the formula.
+But each installment $x$ paid at end of year $k$ also stops interest on itself for $(n - k)$ years. The total interest "saved" by early payments:
+
+$$\frac{xR}{100}\left[1 + 2 + \cdots + (n-1)\right] = \frac{xR}{100} \cdot \frac{n(n-1)}{2}$$
+
+Setting total amount repaid = principal + net interest:
+
+$$nx = P + \frac{PRn}{100} - \frac{xR \cdot n(n-1)}{200}$$
+
+Solving for $P$:
+
+$$P = \frac{x \cdot n}{1 + \frac{Rn}{100}} \times \left(1 + \frac{R(n-1)}{200}\right) = \frac{x \cdot n}{1 + \frac{R(n-1)}{200}}$$
 
 ### 5.2 Equal Annual Installment Under CI
 
