@@ -31,7 +31,7 @@ This note is built for **GATE, ESE, PSU, and Bank aptitude algebra**. It is desi
 
 **Patterns beat expansion.**
 
-### [Image of a balance beam and two interlocking squares]
+**Mental image:** a balance beam with two interlocking squares.
 
 ### The Path of Elegance
 
@@ -123,7 +123,7 @@ Look for the pair \(a+b\) and \(a-b\). They are the master switches for simplifi
 
 **Unknowns are balances.**
 
-### [Image of a weighing machine with variables as weights]
+**Mental image:** a weighing machine with variables acting as weights.
 
 ### The Path of Elegance
 
@@ -219,7 +219,7 @@ $$
 
 **Break form before computation.**
 
-### [Image of a lock opening into smaller gears]
+**Mental image:** a lock opening into smaller gears.
 
 ### The Path of Elegance
 
@@ -286,7 +286,7 @@ $$
 
 **Roots are controlled by the discriminant.**
 
-### [Image of a parabola with a glowing vertex]
+**Mental image:** a parabola with a glowing vertex.
 
 ### The Path of Elegance
 
@@ -408,7 +408,7 @@ $$
 
 **Order changes under negative scaling.**
 
-### [Image of a number line with a mirror at zero]
+**Mental image:** a number line with a mirror at zero.
 
 ### The Path of Elegance
 
@@ -512,7 +512,7 @@ $$
 
 **Exponents create logs; logs undo exponents.**
 
-### [Image of a staircase going up as powers and down as logs]
+**Mental image:** a staircase going up as powers and down as logs.
 
 ### The Path of Elegance
 
@@ -628,7 +628,7 @@ Convert between **exponential form** and **log form** without panic.
 
 **Ratios become equations when scaled.**
 
-### [Image of gears linked by a single scaling rod]
+**Mental image:** gears linked by a single scaling rod.
 
 ### The Path of Elegance
 
@@ -705,7 +705,7 @@ $$
 
 **Sequences are patterns with memory.**
 
-### [Image of equally spaced steps and a multiplying spiral]
+**Mental image:** equally spaced steps beside a multiplying spiral.
 
 ### The Path of Elegance
 
@@ -815,7 +815,7 @@ $$
 
 **Input goes in; one output comes out.**
 
-### [Image of a machine taking \(x\) and emitting \(f(x)\)]
+**Mental image:** a machine taking \(x\) as input and emitting \(f(x)\).
 
 ### The Path of Elegance
 
@@ -1075,8 +1075,10 @@ If any shortcut ignores these conditions, discard it.
 
 ## Repository References
 
-- Companion source set: `/home/runner/work/CSE/CSE/GateOverflow/volume1.pdf`
-- Companion source set: `/home/runner/work/CSE/CSE/GateOverflow/volume2.pdf`
+The following companion PDFs are already present in the same `GateOverflow` folder of this repository:
+
+- [volume1.pdf](./volume1.pdf)
+- [volume2.pdf](./volume2.pdf)
 
 Use this note as the fast-revision, high-clarity layer. Use the PDFs as the broader practice and reference layer.
 
