@@ -1,6 +1,6 @@
 # Percentage — Complete A-Z Study Material
 
-> **Target Exams:** GATE · ESE · PSU · BANK (SSC CGL, IBPS, SBI, RBI)
+> **Target Exams:** GATE · ESE · PSU · Banking Exams (SSC CGL, IBPS, SBI, RBI)
 > **Objective:** Master every concept, trick, and edge case so that no percentage question can surprise you.
 
 ---
