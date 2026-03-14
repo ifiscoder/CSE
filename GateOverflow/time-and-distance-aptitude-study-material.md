@@ -91,9 +91,9 @@ $$1 \text{ m/s} = \frac{18}{5} \text{ km/hr}$$
 
 ### The "5/18" Mnemonic
 
-> **"Km/hr to m/s → multiply by 5/18"** (dividing by a bigger number → smaller value → makes sense, m/s < km/hr numerically for same speed)
+> **"Km/hr to m/s → multiply by 5/18"** (you get a smaller number because 1 m/s is a faster unit — e.g., 36 km/hr = 10 m/s)
 >
-> **"m/s to km/hr → multiply by 18/5"** (reverse)
+> **"m/s to km/hr → multiply by 18/5"** (you get a larger number — reverse of above)
 
 ### Quick Reference Table
 
@@ -485,7 +485,9 @@ $w = 0$: Downstream = Upstream = $b$. Round trip average speed = $b$ (no trap he
 
 $$\text{Avg Speed (round trip)} = \frac{2(b+w)(b-w)}{(b+w)+(b-w)} = \frac{2(b^2 - w^2)}{2b} = \frac{b^2 - w^2}{b}$$
 
-This is always **less than** $b$ (still water speed). The stream always hurts the round trip.
+This is the **Harmonic Mean** of the downstream speed $(b+w)$ and upstream speed $(b-w)$.
+
+It is always **less than** $b$ (still water speed). The stream always hurts the round trip.
 
 ---
 
@@ -854,7 +856,7 @@ $$n_1 = v_p \times t_1 \text{ and } N = (v_p + v_e) \times t_1$$
 
 This gives: $N = n_1 + v_e \times t_1$
 
-Similarly: $N = n_2 - v_e \times t_2$ (when going against, escalator pushes you back so you count more steps)
+Similarly: $N = n_2 - v_e \times t_2$ (when going against, you must walk more steps because the escalator is moving in the opposite direction relative to you)
 
 ### Shortcut
 
