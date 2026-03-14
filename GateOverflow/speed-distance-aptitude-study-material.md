@@ -105,8 +105,8 @@ $$\boxed{\text{m/s} \to \text{km/hr}: \text{Multiply by } \frac{18}{5}}$$
 |------|----|-------------|
 | km/hr | m/s | $\frac{5}{18}$ |
 | m/s | km/hr | $\frac{18}{5}$ |
-| km/hr | m/min | $\frac{50}{3}$ |
-| miles/hr | ft/s | $\frac{22}{15}$ |
+| km/hr | m/min | $\frac{50}{3}$ &ensp; ($\frac{1000}{60}$) |
+| miles/hr | ft/s | $\frac{22}{15}$ &ensp; ($\frac{5280}{3600}$) |
 
 ### Example
 
