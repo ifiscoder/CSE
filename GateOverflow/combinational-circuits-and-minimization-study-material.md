@@ -31,10 +31,10 @@
   - Carry: \(C_{out} = AB + BC_{in} + AC_{in}\)
 - Half subtractor:
   - Difference: \(D = A \oplus B\)
-  - Borrow: \(B_{out} = A'B\)
+  - Borrow: \(Borrow = A'B\)
 - Full subtractor:
   - Difference: \(D = A \oplus B \oplus B_{in}\)
-  - Borrow: \(B_{out} = A'B + A'B_{in} + BB_{in}\)
+  - Borrow: \(Borrow_{out} = A'B + A'B_{in} + BB_{in}\)
 
 ### Data routing/selection circuits
 - Multiplexer (MUX):
