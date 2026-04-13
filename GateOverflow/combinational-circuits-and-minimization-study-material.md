@@ -32,7 +32,7 @@
 - Point: Encoder / Priority encoder
   - Subpoint: Resolve multiple active inputs (priority rule)
 - Point: Decoder
-  - Subpoint: n-to-\(2^n\) line activation
+  - Subpoint: n-to-`2^n` line activation
 
 ### Topic: Comparison and parity circuits
 - Point: Magnitude comparator
